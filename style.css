@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.lyric_box {
+    width: 800px;
+    height: 600px;
+}
+
+.lyric_box {
+    margin-top: 20px;
+    display: flex;
+}
+
+.origin_box {
+    width: 400px;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.trans_box {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.lyric_box textarea,.origin_text_line,.trans_text_line {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border:0px;
+}
+
+#origin_text_line,#trans_text_line {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.text_line_highlight {
+    background-color: red;
+    color: white;
+}

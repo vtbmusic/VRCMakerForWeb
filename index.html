@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <audio id="audio" controls></audio>
+    <br />
+    <input type="text" name="audio_url" id="audio_url" value="https://cdn.aqua.chat/audio/88d7a97c485799e984464046d441e84a.m4a" />
+    <button id="set_audio_url">SET</button>
+
+    <div class="lyric_box">
+        <div class="origin_box" id="origin_box">
+            <textarea name="origin" id="origin"></textarea>
+        </div>
+        <div class="trans_box" id="trans_box">
+            <textarea name="trans" id="trans"></textarea>
+        </div>
+    </div>
+
+    <button id="edit_mode" disabled>EDIT MODE</button>
+    <button id="insert_mode">INSERT MODE</button>
+
+    <button id="insert_time" disabled>INSERT TIME</button>
+
+    <button id="export_vrc">EXPORT VRC</button>
+
+    <script src="./FileSaver.min.js"></script>
+    <script src="./LyricMaker.js"></script>
+</body>
+
+</html>
