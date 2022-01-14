@@ -19,11 +19,11 @@ let trans_text = [];
 let text_index = 0;
 
 origin.addEventListener("input", () => {
-    origin_text = origin.value.split(/[(\r\n)\r\n]+/);
+    origin_text = origin.value.split('\n');
 });
 
 trans.addEventListener("input", () => {
-    trans_text = trans.value.split(/[(\r\n)\r\n]+/);
+    trans_text = trans.value.split('\n');
 })
 
 set_audio_url.onclick = () => {
